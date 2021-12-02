@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="code.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <iframe width="560" height="315" autoplay="autoplay" src="https://www.youtube.com/embed/fZuNfqKoqxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <!-- <video src="VID_20211018_085329.mp4"></video> -->
+    <!-- <video poster="VID_20211018_085329_Moment.jpg" autoplay="autoplay" loop="loop" controls="control -->
+        <!-- s" tabindex="0"> -->
+    <!-- <video controls>
+    <source src="https://www.youtube.com/embed/fZuNfqKoqxs" type='video/mp4; codecs="vp8, vorbis"' />
+    
+    </video> -->
+</body>
+<body>
+    <div id="source" class="conteiner" ondragenter="return dragEnter(event)"
+    ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+    <div id="firstDragElement" class="element" ondragstart="return
+    dragStart(event)" ondragend="return dragEnd(event)" draggable="true">
+    Text 1</div>
+    <div id="secondDragElement" class="element" ondragstart="return
+    dragStart(event)" ondragend="return dragEnd(event)" draggable="true">
+    Text 2</div>
+    <div id="thirdDragElement" class="element" ondragstart="return
+    dragStart(event)" ondragend="return dragEnd(event)" draggable="true">
+    Text 3</div>
+    </div>
+    <div id="target" class="conteiner" ondragenter="return dragEnter(event)"
+    ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+    </div>
+
+</body>
+<body onload="listLoad();">
+    <div id="header">
+    <h1>Блокнот</h1>
+    </div>
+   
+    <div id="notes">
+    <h3>Список записей</h3>
+    <ol id="notelist"></ol>
+    </div>
+   
+    <div id="note">
+    <form id="formnote">
+   
+    <fieldset>
+    <table>
+    <tr>
+    <td><label class="notefield">Наименование
+    </label></td>
+    <td colspan=2>
+    <input id="notename" type="text"
+    class="notefield"></input>
+    </td>
+    </tr>
+    <tr>
+    <td><label class="notefield">Текст записи
+    </label></td>
+    <td colspan=2>
+    <textarea id="notecontent" rows=10></textarea>
+    </td>
+    </tr>
+   
+    <tr>
+    <td></td>
+    <td class="notebtn"><button id="save"
+    type="submit" onclick="saveNote();"> Сохранить</button></td>
+    <td class="notebtn"><button id="delete"
+    type="submit" onclick="deleteNote();"
+    >Удалить</button></td>
+    </tr>
+    </table>
+    </fieldset>
+    </form>
+    </div>
+   
+    <div id="footer">
+    <p class="footertext">2021 г.</p>
+    </div>
+   </body>
+   <body>
+    <canvas id="squareCanvas" width="400" height="400"
+    style="border:10px solid #000000;">
+   </canvas>
+   
+    </body>
+</html>
+
+<!-- <script>
+    let art = document.getElementById("squareCanvas");
+    let stylish = art.getContext("2d");
+    stylish.fillStyle = "#000000";
+    stylish.fillRect(125,125,250,250);
+    stylish.moveTo(100,0);
+    stylish.lineTo(100,200);
+    stylish.stroke();
+    </script> -->
